@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <aside>
+    <div class="title">
+      <h1>DASHBOARD</h1>
+      <div>
+          <img src="assets/image/Escott_logo.svg" alt="">
+      </div>
+  </div>
+
+  </aside>
+  
+  <main>
+    <div class="container">
+        <!-- <div class="machine"> -->
+      <div class="top-row">
+        <!--  1st Machine -->
+        <div class="machine washer">
+          <div class="bar">
+              <h5>Washer</h5>
+              <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+              </label>
+          </div>
+          <div class="status">
+            <div class="graph1">
+                <svg>
+                    <circle cx="90" cy="70" r="60" id= "my_circle"/>
+                </svg>
+               
+            </div>
+            <div class="info">
+                <p>ID : 1</p>
+                <p>Max Load: 4 </p>
+                <p>Current Load : <strong id = "viewCount">0</strong></p>
+                <!-- <p>Countdown : 0 : 00 : 00</p> -->
+                <p>Countdown : <countdown #countdown [config]="{leftTime:10, demand : true}"></countdown></p><br>
+                <button class="button1" (click)="countdown.resume()">Available</button>
+                <!-- <p>Countdown : <countdown #cd1 [config]="{leftTime:10}"></countdown></p><br>
+                <button class="button1" (click)="cd1.pause()">Pause</button>
+                <button class="button1" (click)="cd1.resume()">Resume</button>
+                <button class="button1" (click)="cd1.stop()">Stop</button>
+                <button class="button1" (click)="cd1.restart()">Restart</button> -->
+
+                
+            </div>
+          </div>
+        </div>
+          <!--  2nd Machine -->
+        <div class="machine washer">
+          <div class="bar">
+            <h5>Washer</h5>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="status">
+            <div class="graph2">
+              <svg>
+                <circle cx="90" cy="70" r="60" id= "my_circle" />
+              </svg>
+            </div>
+            <div class="info">
+              <p>ID : 2</p>
+              <p>Max Load: 4 </p>
+              <p>Current Load : <strong id = "viewCount">0</strong></p>
+              <p>Countdown : 0 : 00 : 00</p>
+              <button class="button2">Available</button>
+            </div>
+          </div>
+        </div>
+        <!--  3rd Machine -->
+        <div class="machine washer">
+          <div class="bar">
+              <h5>Washer</h5>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+          </div>
+          <div class="status">
+              <div class="graph3">
+                <svg>
+                  <circle cx="90" cy="70" r="60" id= "my_circle"/>
+                </svg>
+              </div>
+              <div class="info">
+                <p>ID : 3</p>
+                <p>Max Load: 4 </p>
+                <p>Current Load : <strong id = "viewCount">0</strong></p>
+                <p>Countdown : 0 : 00 : 00</p>
+                <button class="button3">Out of use</button>
+              </div>
+          </div>
+        </div>  
+      </div>
+
+      <!-- DRYER -->
+      <div class="bot-row">
+
+        <!-- 1st Dryer -->
+        <div class="machine dryer">
+          <div class="bar">
+              <h5>Dryer</h5>
+              <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+              </label>
+          </div>
+          <div class="status">
+              <div class="graph4">
+                  <svg>
+                      <circle cx="90" cy="70" r="60" id= "my_circle"/>
+                  </svg>
+              </div>
+              <div class="info">
+                <p>ID : 4</p>
+                <p>Max Load: 4 </p>
+                <p>Current Load : <strong id = "viewCount">0</strong></p>
+                <p init="3600" >Countdown : </p>
+                <button class="button4">Available</button>
+              </div>
+          </div>
+        </div>
+
+        <!-- 2nd Dryer -->
+        <div class="machine dryer">
+          <div class="bar">
+              <h5>Dryer</h5>
+              <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+              </label>
+          </div>
+          <div class="status">
+            <div class="graph5">
+                <svg>
+                    <circle cx="90" cy="70" r="60" id= "my_circle"/>
+                </svg>
+            </div>
+            <div class="info">
+                <p>ID : 5</p>
+                <p>Max Load: 4 </p>
+                <p>Current Load : <strong id = "viewCount">0</strong></p>
+                <p>Countdown : 0 : 00 : 00</p>
+                <button class="button5">Unavailable</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Dryer -->
+        <div class="machine dryer">
+          <div class="bar">
+            <h5>Dryer</h5>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="status">
+            <div class="graph6">
+              <svg>
+                <circle cx="90" cy="70" r="60" id= "my_circle" />
+              </svg>
+            </div>
+            <div class="info">
+              <p>ID : 6</p> 
+              <p>Max Load: 4 </p>
+              <p>Current Load : <strong id = "viewCount">0</strong></p>
+              <p init="3600">Countdown :</p>
+              <button class="button6">Available</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+</body>
+</html>
+
+
+
